@@ -14,13 +14,13 @@ import (
 )
 
 type Create struct {
-	ProjectName        string
-	CreateType         string
-	FilePath           string
-	FileName           string
-	FileNameTitleLower string
-	FileNameFirstChar  string
-	IsFull             bool
+	ProjectName string
+	CreateType  string
+	FilePath    string
+	FileName    string
+	//FileNameTitleLower string
+	//FileNameFirstChar  string
+	IsFull bool
 }
 
 func NewCreate() *Create {
@@ -78,8 +78,8 @@ func runCreate(cmd *cobra.Command, args []string) {
 	c.CreateType = cmd.Use
 	c.FilePath, c.FileName = filepath.Split(args[0])
 	c.FileName = strings.ReplaceAll(c.FileName, ".go", "")
-	c.FileNameTitleLower = strings.ToLower(string(c.FileName[0])) + c.FileName[1:]
-	c.FileNameFirstChar = string(c.FileNameTitleLower[0])
+	//c.FileNameTitleLower = string(c.FileName[0])) + c.FileName[1:]
+	//c.FileNameFirstChar = string(c.FileNameTitleLower[0])
 
 	switch c.CreateType {
 	case "handler", "service", "repository", "model":
@@ -107,9 +107,9 @@ func (c *Create) genFile() {
 	if filePath == "" {
 		filePath = fmt.Sprintf("internal/%s/", c.CreateType)
 	}
-	f := createFile(filePath, strings.ToLower(c.FileName)+".go")
+	f := createFile(filePath, c.FileName+".go")
 	if f == nil {
-		log.Printf("warn: file %s%s %s", filePath, strings.ToLower(c.FileName)+".go", "already exists.")
+		log.Printf("warn: file %s%s %s", filePath, c.FileName+".go", "already exists.")
 		return
 	}
 	defer f.Close()
@@ -122,7 +122,7 @@ func (c *Create) genFile() {
 	if err != nil {
 		log.Fatalf("create %s error: %s", c.CreateType, err.Error())
 	}
-	log.Printf("Created new %s: %s", c.CreateType, filePath+strings.ToLower(c.FileName)+".go")
+	log.Printf("Created new %s: %s", c.CreateType, filePath+c.FileName+".go")
 
 }
 func createFile(dirPath string, filename string) *os.File {
