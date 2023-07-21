@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/go-nunu/nunu/cmd/nunu"
+	"github.com/springeye/nunu/cmd/nunu"
 )
 
 func main() {

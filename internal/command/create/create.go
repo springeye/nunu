@@ -8,9 +8,9 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/go-nunu/nunu/internal/pkg/helper"
-	"github.com/go-nunu/nunu/tpl"
 	"github.com/spf13/cobra"
+	"github.com/springeye/nunu/internal/pkg/helper"
+	"github.com/springeye/nunu/tpl"
 )
 
 type Create struct {

@@ -3,15 +3,15 @@
 
 Nunu是一个基于Golang的应用脚手架，它的名字来自于英雄联盟中的游戏角色，一个骑在雪怪肩膀上的小男孩。和努努一样，该项目也是站在巨人的肩膀上，它是由Golang生态中各种非常流行的库整合而成的，它们的组合可以帮助你快速构建一个高效、可靠的应用程序。
 
-[英文介绍](https://github.com/go-nunu/nunu/blob/main/README.md)
+[英文介绍](https://github.com/springeye/nunu/blob/main/README.md)
 
-![Nunu](https://github.com/go-nunu/nunu/blob/main/.github/assets/banner.png)
+![Nunu](https://github.com/springeye/nunu/blob/main/.github/assets/banner.png)
 
 ## 文档
-* [使用指南](https://github.com/go-nunu/nunu/blob/main/docs/zh/guide.md)
-* [分层架构](https://github.com/go-nunu/nunu/blob/main/docs/zh/architecture.md)
-* [上手教程](https://github.com/go-nunu/nunu/blob/main/docs/zh/tutorial.md)
-* [高效编写单元测试](https://github.com/go-nunu/nunu/blob/main/docs/zh/unit_testing.md)
+* [使用指南](https://github.com/springeye/nunu/blob/main/docs/zh/guide.md)
+* [分层架构](https://github.com/springeye/nunu/blob/main/docs/zh/architecture.md)
+* [上手教程](https://github.com/springeye/nunu/blob/main/docs/zh/tutorial.md)
+* [高效编写单元测试](https://github.com/springeye/nunu/blob/main/docs/zh/unit_testing.md)
 
 ## 功能
 - **Gin**: https://github.com/gin-gonic/gin
@@ -37,11 +37,11 @@ Nunu是一个基于Golang的应用脚手架，它的名字来自于英雄联盟�
 ## 简洁分层架构
 Nunu采用了经典的分层架构。同时，为了更好地实现模块化和解耦，采用了依赖注入框架`Wire`。
 
-![Nunu Layout](https://github.com/go-nunu/nunu/blob/main/.github/assets/layout.png)
+![Nunu Layout](https://github.com/springeye/nunu/blob/main/.github/assets/layout.png)
 
 ## Nunu CLI
 
-![Nunu](https://github.com/go-nunu/nunu/blob/main/.github/assets/screenshot.jpg)
+![Nunu](https://github.com/springeye/nunu/blob/main/.github/assets/screenshot.jpg)
 
 
 
@@ -163,7 +163,7 @@ Nunu采用了经典的分层架构。同时，为了更好地实现模块化和�
 您可以通过以下命令安装Nunu：
 
 ```bash
-go install github.com/go-nunu/nunu@latest
+go install github.com/springeye/nunu@latest
 ```
 
 > tips: 如果`go install`成功，却提示找不到nunu命令，这是因为环境变量没有配置，可以把 GOBIN 目录配置到环境变量中即可

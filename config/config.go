@@ -2,7 +2,7 @@ package config
 
 const (
 	WireCmd      = "github.com/google/wire/cmd/wire@latest"
-	NunuCmd      = "github.com/go-nunu/nunu@latest"
-	RepoBase     = "https://github.com/go-nunu/nunu-layout-base.git"
-	RepoAdvanced = "https://github.com/go-nunu/nunu-layout-advanced.git"
+	NunuCmd      = "github.com/springeye/nunu@latest"
+	RepoBase     = "https://github.com/springeye/nunu-layout-base.git"
+	RepoAdvanced = "https://github.com/springeye/nunu-layout-advanced.git"
 )

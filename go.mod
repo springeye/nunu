@@ -1,4 +1,4 @@
-module github.com/go-nunu/nunu
+module github.com/springeye/nunu
 
 go 1.16
 

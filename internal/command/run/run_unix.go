@@ -15,8 +15,8 @@ import (
 
 	"github.com/AlecAivazis/survey/v2"
 	"github.com/fsnotify/fsnotify"
-	"github.com/go-nunu/nunu/internal/pkg/helper"
 	"github.com/spf13/cobra"
+	"github.com/springeye/nunu/internal/pkg/helper"
 )
 
 var quit = make(chan os.Signal, 1)
