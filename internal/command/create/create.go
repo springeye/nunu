@@ -77,7 +77,7 @@ func runCreate(cmd *cobra.Command, args []string) {
 	c.ProjectName = helper.GetProjectName(".")
 	c.CreateType = cmd.Use
 	c.FilePath, c.FileName = filepath.Split(args[0])
-	c.FileName = strings.ReplaceAll(strings.ToUpper(string(c.FileName[0]))+c.FileName[1:], ".go", "")
+	c.FileName = strings.ReplaceAll(c.FileName, ".go", "")
 	c.FileNameTitleLower = strings.ToLower(string(c.FileName[0])) + c.FileName[1:]
 	c.FileNameFirstChar = string(c.FileNameTitleLower[0])
 
